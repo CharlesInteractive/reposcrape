@@ -12,9 +12,9 @@ const cron = require('node-cron')
 const app = express()
 
 // define url
-const githuburl = 'https://github.com/'
+const githuburl = 'https://github.com'
 const username = 'CharlesInteractive'
-const url = githuburl + username
+const url = githuburl + '/' + username
 
 // create empty repos array
 const repos = []
@@ -43,13 +43,20 @@ cron.schedule('* * * * *', () => {
         // find the pinned repositorys buy class selector
         // push each pinned repository to the repos array
         $('.js-pinned-items-reorder-container li', html).each(function() {
-            const title = $(this).find('a').text().replace(/\n/g, '').replace(/\t/g, '')
+            const owner = $(this).find('a .owner').text().replace(/\n/g, '').replace(/\t/g, '')
+            const title = $(this).find('a .repo').text().replace(/\n/g, '').replace(/\t/g, '')
+
+            let name
+            owner != '' ? name = owner + '/' + title : name = title
+
             // for some odd reason github puts a bunch of empty space before and after the description so we remove that
             const description = $(this).find('.pinned-item-desc').text().replace(/\n/g, '').replace(/\t/g, '').replace('        ', '').replace('      ', '')
-            const url = $(this).find('a').attr('href')
+
+            const repopath = $(this).find('a').attr('href')
+            const url = githuburl + repopath
 
             repos.push({
-                title,
+                name,
                 description,
                 url
             })
