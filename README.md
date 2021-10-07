@@ -2,10 +2,10 @@
 Node.js web scraper for pinned github repositories.
 
 ## Why?
-This was just for fun. Figured it would be cool to scrape my pinned repositories into a json file to upate on my porfolio site automagicly through an api.
+This was just for fun. Figured it would be cool to scrape my pinned repositories into a json file to upate on my porfolio site automagicly through an api. Useful if you have a lot of stars or change your pinned repositories frequently.
 
 ## Get Started
-As always run
+As always run:
 
     npm install
 
