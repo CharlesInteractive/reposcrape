@@ -43,19 +43,30 @@ cron.schedule('* * * * *', () => {
         // find the pinned repositorys buy class selector
         // push each pinned repository to the repos array
         $('.js-pinned-items-reorder-container li', html).each(function() {
+            // defining the values we would like to save
+            // repository owner (only available if the profile is not current owner)
             const owner = cleanstr( $(this).find('a .owner').text() )
+
+            // repository title
             const title = cleanstr( $(this).find('a .repo').text() )
 
+            // construct the name of the repository to save
             let name
             owner != '' ? name = owner + '/' + title : name = title
 
+            // repository description
             const description = cleanstr( $(this).find('.pinned-item-desc').text() )
 
+            // repository path
             const repopath = cleanstr( $(this).find('a').attr('href') )
+
+            // repository url
             const url = githuburl + repopath
 
+            // repository stars
             const stargazers = cleanstr( $(this).find('a[href="' + repopath + '/stargazers"]').text() )
 
+            // repository language
             const language = cleanstr( $(this).find('span[itemprop="programmingLanguage"]').text() )
 
             repos.push({
@@ -92,6 +103,7 @@ cron.schedule('* * * * *', () => {
 
 });
 
+// function to clean strings
 function cleanstr(string) {
     const dirty = string.toString();
     const clean = dirty.trim().replace(/\n/g, '').replace(/\t/g, '')
