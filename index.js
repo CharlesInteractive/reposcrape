@@ -43,22 +43,27 @@ cron.schedule('* * * * *', () => {
         // find the pinned repositorys buy class selector
         // push each pinned repository to the repos array
         $('.js-pinned-items-reorder-container li', html).each(function() {
-            const owner = $(this).find('a .owner').text().replace(/\n/g, '').replace(/\t/g, '')
-            const title = $(this).find('a .repo').text().replace(/\n/g, '').replace(/\t/g, '')
+            const owner = cleanstr( $(this).find('a .owner').text() )
+            const title = cleanstr( $(this).find('a .repo').text() )
 
             let name
             owner != '' ? name = owner + '/' + title : name = title
 
-            // for some odd reason github puts a bunch of empty space before and after the description so we remove that
-            const description = $(this).find('.pinned-item-desc').text().replace(/\n/g, '').replace(/\t/g, '').replace('        ', '').replace('      ', '')
+            const description = cleanstr( $(this).find('.pinned-item-desc').text() )
 
-            const repopath = $(this).find('a').attr('href')
+            const repopath = cleanstr( $(this).find('a').attr('href') )
             const url = githuburl + repopath
+
+            const stargazers = cleanstr( $(this).find('a[href="' + repopath + '/stargazers"]').text() )
+
+            const language = cleanstr( $(this).find('span[itemprop="programmingLanguage"]').text() )
 
             repos.push({
                 name,
                 description,
-                url
+                url,
+                stargazers,
+                language
             })
             
         })
@@ -86,6 +91,14 @@ cron.schedule('* * * * *', () => {
     .catch(err => console.log('[reposcrape] failed -> ' + err))
 
 });
+
+function cleanstr(string) {
+    const dirty = string.toString();
+    const clean = dirty.trim().replace(/\n/g, '').replace(/\t/g, '')
+    
+    return clean;
+
+}
 
 // listen for changes to this js file, code will run on save
 app.listen(PORT, () => console.log(`[reposcrape] server running on port ${PORT}`))
