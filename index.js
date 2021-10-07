@@ -42,7 +42,7 @@ cron.schedule('* * * * *', () => {
 
         // find the pinned repositorys buy class selector
         // push each pinned repository to the repos array
-        $('.js-pinned-items-reorder-container li', html).each(function() {
+        $('.js-pinned-items-reorder-list li', html).each(function() {
             // defining the values we would like to save
             // repository owner (only available if the profile is not current owner)
             const owner = cleanstr( $(this).find('a .owner').text() )

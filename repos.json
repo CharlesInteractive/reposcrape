@@ -1,177 +1,44 @@
 [
     {
-        "title": "Random-Beers",
+        "name": "Random-Beers",
         "description": "",
-        "url": "/CharlesInteractive/Random-Beers"
+        "url": "https://github.com/CharlesInteractive/Random-Beers",
+        "stargazers": "",
+        "language": "JavaScript"
     },
     {
-        "title": "Solar-System",
+        "name": "Solar-System",
         "description": "VR solar system build with Aframe.",
-        "url": "/CharlesInteractive/Solar-System"
+        "url": "https://github.com/CharlesInteractive/Solar-System",
+        "stargazers": "",
+        "language": "JavaScript"
     },
     {
-        "title": "Saturn-Quiz",
+        "name": "Saturn-Quiz",
         "description": "",
-        "url": "/CharlesInteractive/Saturn-Quiz"
+        "url": "https://github.com/CharlesInteractive/Saturn-Quiz",
+        "stargazers": "",
+        "language": "CSS"
     },
     {
-        "title": "Motherplate-12.2019",
+        "name": "Motherplate-12.2019",
         "description": "",
-        "url": "/CharlesInteractive/Motherplate-12.2019"
+        "url": "https://github.com/CharlesInteractive/Motherplate-12.2019",
+        "stargazers": "",
+        "language": "SCSS"
     },
     {
-        "title": "Resources",
+        "name": "Resources",
         "description": "A directory of useful links and resources for web development and design.",
-        "url": "/CharlesInteractive/Resources"
+        "url": "https://github.com/CharlesInteractive/Resources",
+        "stargazers": "",
+        "language": ""
     },
     {
-        "title": "Random-Beers",
-        "description": "",
-        "url": "/CharlesInteractive/Random-Beers"
-    },
-    {
-        "title": "Solar-System",
-        "description": "VR solar system build with Aframe.",
-        "url": "/CharlesInteractive/Solar-System"
-    },
-    {
-        "title": "Saturn-Quiz",
-        "description": "",
-        "url": "/CharlesInteractive/Saturn-Quiz"
-    },
-    {
-        "title": "Motherplate-12.2019",
-        "description": "",
-        "url": "/CharlesInteractive/Motherplate-12.2019"
-    },
-    {
-        "title": "Resources",
-        "description": "A directory of useful links and resources for web development and design.",
-        "url": "/CharlesInteractive/Resources"
-    },
-    {
-        "title": "Random-Beers",
-        "description": "",
-        "url": "/CharlesInteractive/Random-Beers"
-    },
-    {
-        "title": "Solar-System",
-        "description": "VR solar system build with Aframe.",
-        "url": "/CharlesInteractive/Solar-System"
-    },
-    {
-        "title": "Saturn-Quiz",
-        "description": "",
-        "url": "/CharlesInteractive/Saturn-Quiz"
-    },
-    {
-        "title": "Motherplate-12.2019",
-        "description": "",
-        "url": "/CharlesInteractive/Motherplate-12.2019"
-    },
-    {
-        "title": "Resources",
-        "description": "A directory of useful links and resources for web development and design.",
-        "url": "/CharlesInteractive/Resources"
-    },
-    {
-        "title": "Random-Beers",
-        "description": "",
-        "url": "/CharlesInteractive/Random-Beers"
-    },
-    {
-        "title": "Solar-System",
-        "description": "VR solar system build with Aframe.",
-        "url": "/CharlesInteractive/Solar-System"
-    },
-    {
-        "title": "Saturn-Quiz",
-        "description": "",
-        "url": "/CharlesInteractive/Saturn-Quiz"
-    },
-    {
-        "title": "Motherplate-12.2019",
-        "description": "",
-        "url": "/CharlesInteractive/Motherplate-12.2019"
-    },
-    {
-        "title": "Resources",
-        "description": "A directory of useful links and resources for web development and design.",
-        "url": "/CharlesInteractive/Resources"
-    },
-    {
-        "title": "Random-Beers",
-        "description": "",
-        "url": "/CharlesInteractive/Random-Beers"
-    },
-    {
-        "title": "Solar-System",
-        "description": "VR solar system build with Aframe.",
-        "url": "/CharlesInteractive/Solar-System"
-    },
-    {
-        "title": "Saturn-Quiz",
-        "description": "",
-        "url": "/CharlesInteractive/Saturn-Quiz"
-    },
-    {
-        "title": "Motherplate-12.2019",
-        "description": "",
-        "url": "/CharlesInteractive/Motherplate-12.2019"
-    },
-    {
-        "title": "Resources",
-        "description": "A directory of useful links and resources for web development and design.",
-        "url": "/CharlesInteractive/Resources"
-    },
-    {
-        "title": "Random-Beers",
-        "description": "",
-        "url": "/CharlesInteractive/Random-Beers"
-    },
-    {
-        "title": "Solar-System",
-        "description": "VR solar system build with Aframe.",
-        "url": "/CharlesInteractive/Solar-System"
-    },
-    {
-        "title": "Saturn-Quiz",
-        "description": "",
-        "url": "/CharlesInteractive/Saturn-Quiz"
-    },
-    {
-        "title": "Motherplate-12.2019",
-        "description": "",
-        "url": "/CharlesInteractive/Motherplate-12.2019"
-    },
-    {
-        "title": "Resources",
-        "description": "A directory of useful links and resources for web development and design.",
-        "url": "/CharlesInteractive/Resources"
-    },
-    {
-        "title": "Random-Beers",
-        "description": "",
-        "url": "/CharlesInteractive/Random-Beers"
-    },
-    {
-        "title": "Solar-System",
-        "description": "VR solar system build with Aframe.",
-        "url": "/CharlesInteractive/Solar-System"
-    },
-    {
-        "title": "Saturn-Quiz",
-        "description": "",
-        "url": "/CharlesInteractive/Saturn-Quiz"
-    },
-    {
-        "title": "Motherplate-12.2019",
-        "description": "",
-        "url": "/CharlesInteractive/Motherplate-12.2019"
-    },
-    {
-        "title": "Resources",
-        "description": "A directory of useful links and resources for web development and design.",
-        "url": "/CharlesInteractive/Resources"
+        "name": "reposcrape",
+        "description": "Node.js web scraper for pinned github repositories.",
+        "url": "https://github.com/CharlesInteractive/reposcrape",
+        "stargazers": "",
+        "language": "JavaScript"
     }
 ]
